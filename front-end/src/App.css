@@ -1,0 +1,7104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background: #BA265D;
+  height: 75px;
+  border-bottom: 2px solid #252525;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header__container {
+  width: 1150px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__container--logo {
+  width: 55px;
+  height: 55px;
+  margin-top: 10px;
+}
+
+.header__container--textTop {
+  color: #F8F8F8;
+  font-size: 1.75rem;
+  position: relative;
+  right: -3px;
+  top: -27px;
+}
+
+.header__container--textBottom {
+  color: #F8F8F8;
+  font-size: 1rem;
+  position: relative;
+  right: 128px;
+  top: -5px;
+  letter-spacing: 1px;
+}
+
+.header__nav--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 23px 0;
+  line-height: 30px;
+}
+
+.header__nav--item {
+  color: #F8F8F8;
+  margin-right: 20px;
+}
+
+.header__nav--item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__nav--upload {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+}
+
+.header__nav--login {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+}
+
+.header__nav--signup {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+}
+
+.header__nav--item:hover {
+  color: #d1cdcd;
+  border-bottom: 3px solid #d1cdcd;
+  padding-bottom: 15px;
+}
+
+.header__nav--language {
+  list-style: none;
+  padding-left: 12px;
+  padding-top: 30px;
+  color: #000;
+  background: #BA265D;
+  display: none;
+  padding: 0;
+  position: relative;
+  top: 10px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.header__nav--language li {
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  border-bottom: 2px solid #252525;
+}
+
+.header__nav--language li:hover {
+  background: #901d48;
+}
+
+.header__nav--language li span {
+  position: relative;
+  top: -7px;
+}
+
+.header__nav--language span {
+  height: 54px;
+  display: inline-block;
+}
+
+.header__nav--ukFlag {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(./assets/icons/uk.png) no-repeat;
+  margin-right: 10px;
+  line-height: 4px;
+}
+
+.header__nav--frFlag {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(./assets/icons/france.png) no-repeat;
+  margin-right: 10px;
+  line-height: 4px;
+}
+
+.header__nav--lastItem {
+  width: 80px;
+  cursor: pointer;
+}
+
+.header__nav--lastItem:hover {
+  padding-bottom: 0px;
+}
+
+.header__nav--language:hover {
+  display: block;
+}
+
+.header__nav--item:last-child:hover .header__nav--language {
+  display: block;
+}
+
+.signup {
+  width: 650px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.signup__nav {
+  color: #aaa;
+  font-size: .9rem;
+}
+
+.signup__card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup__card--top {
+  margin: 0;
+  background: #eee;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.signup__card--form {
+  padding: 40px;
+}
+
+.signup__card--form label {
+  width: 100px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.signup__card--username, .signup__card--email, .signup__card--phone, .signup__card--password {
+  margin-bottom: 30px;
+}
+
+.signup__card--usernameInput, .signup__card--emailInput, .signup__card--phoneInput, .signup__card--passwordInput {
+  height: 40px;
+  width: 450px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup__card--submit {
+  margin-top: 30px;
+}
+
+.signup__card--submitBtn {
+  padding: 15px 35px;
+  color: #eee;
+  background: #5281da;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.signup__card--submitBtn:hover {
+  background: #234fa3;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.signup__card--submitBtn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.signup__card--label {
+  position: relative;
+  top: 12px;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__content {
+  width: 60%;
+  background-color: #fff;
+  height: 20rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 50px;
+  border: 1px solid #000;
+  overflow-y: scroll;
+}
+
+.popup__content--close {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  position: fixed;
+  right: 100px;
+}
+
+.popup__content--close:hover {
+  color: red;
+}
+
+.popup__content--headerTwo {
+  color: #BA265D;
+}
+
+.footer {
+  background: #252525;
+  height: 70px;
+  color: #F8F8F8;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 28px;
+}
+
+.footer__list--item {
+  margin-right: 40px;
+}
+
+.footer__list--item:hover {
+  color: #BA265D;
+}
+
+.footer__list--agreement {
+  margin-left: 250px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 25px 150px 0 0;
+}
+
+.footer__icons--icon {
+  margin-right: 20px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.footer__icons--icon:first-child:hover {
+  color: #3b5998;
+}
+
+.footer__icons--icon:nth-child(2):hover {
+  color: #38A1F3;
+}
+
+.footer__icons--icon:last-child:hover {
+  color: #b43767;
+}
+
+.login {
+  width: 650px;
+  margin: 0 auto;
+  padding-bottom: 300px;
+}
+
+.login__nav {
+  color: #aaa;
+  font-size: .9rem;
+}
+
+.login__card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.login__card--email {
+  margin-bottom: 30px;
+}
+
+.login__card--atSymbol, .login__card--lockSymbol {
+  width: 40px;
+  height: 43px;
+  display: inline-block;
+  background: #ccc;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  left: 40px;
+  border-radius: 5px;
+}
+
+.login__card--emailInput, .login__card--passwordInput {
+  height: 40px;
+  width: 450px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 50px;
+}
+
+.login__card--btn {
+  padding: 10px 35px;
+  color: #eee;
+  background: #68b454;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 86%;
+  margin-left: 38px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.login__card--btn:hover {
+  background: #3f7131;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login__card--btn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hero {
+  height: 550px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./assets/images/banner.jpg) no-repeat;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/images/banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position-y: -200px;
+  text-align: center;
+}
+
+.hero__header {
+  color: #fff;
+  font-size: 2.5rem;
+  -webkit-animation: move 2s ease-in-out;
+          animation: move 2s ease-in-out;
+  margin: 0;
+  position: relative;
+  top: 150px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  75% {
+    opacity: 0.7;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  75% {
+    opacity: 0.7;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.search {
+  width: 800px;
+  background: rgba(238, 238, 238, 0.75);
+  opacity: 0.7;
+  margin: 40px auto 400px auto;
+  padding: 30px 30px 30px 30px;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.search__form {
+  opacity: 1;
+}
+
+.search__location {
+  padding: 5px 10px;
+  width: 600px;
+  margin-right: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+.search__submit {
+  padding: 12px 35px;
+  color: #eee;
+  background: #5281da;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.search__submit:hover {
+  background: #234fa3;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.search__advanced label {
+  margin-right: 10px;
+}
+
+.search__minPrice, .search__maxPrice {
+  width: 60px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 0 5px;
+}
+
+.search__bedrooms {
+  width: 60px;
+  height: 30px;
+}
+
+.moreInfo {
+  position: relative;
+  bottom: 155px;
+  padding: 60px;
+}
+
+.moreInfo__container {
+  width: 1150px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moreInfo__left {
+  width: 500px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.moreInfo__right {
+  width: 500px;
+  text-align: center;
+}
+
+.moreInfo .fas {
+  color: #BA265D;
+  font-size: 3rem;
+}
+
+.moreInfo p {
+  line-height: 30px;
+}
+
+.moreInfo h2 {
+  color: #BA265D;
+}
+
+.slider {
+  height: 400px;
+  width: 1150px;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 5px;
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.slider__header {
+  margin-bottom: 30px;
+}
+
+.fa-angle-left {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 220px;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fa-angle-right {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 220px;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fa-angle-left:hover {
+  color: #BA265D;
+}
+
+.fa-angle-right:hover {
+  color: #BA265D;
+}
+
+/* #region cards slider */
+.cards-slider-wrapper {
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.cards-slider-wrapper .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 200px;
+  opacity: 0.5;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: opacity 300ms linear, -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.cards-slider.active-slide-0 #card-0 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-1 #card-1 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-2 #card-2 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-3 #card-3 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-4 #card-4 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-5 #card-5 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-6 #card-6 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-7 #card-7 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-8 #card-8 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-9 #card-9 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-10 #card-10 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-11 #card-11 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-12 #card-12 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-13 #card-13 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-14 #card-14 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-15 #card-15 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-16 #card-16 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-17 #card-17 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-18 #card-18 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-19 #card-19 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-20 #card-20 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-21 #card-21 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-22 #card-22 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-23 #card-23 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-24 #card-24 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-25 #card-25 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-26 #card-26 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-27 #card-27 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-28 #card-28 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-29 #card-29 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-30 #card-30 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-31 #card-31 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-32 #card-32 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-33 #card-33 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-34 #card-34 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-35 #card-35 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-36 #card-36 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-37 #card-37 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-38 #card-38 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-39 #card-39 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-40 #card-40 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-41 #card-41 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-42 #card-42 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-43 #card-43 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-44 #card-44 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-45 #card-45 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-46 #card-46 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-47 #card-47 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-48 #card-48 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-49 #card-49 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-50 #card-50 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-51 #card-51 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-52 #card-52 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-53 #card-53 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-54 #card-54 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-55 #card-55 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-56 #card-56 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-57 #card-57 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-58 #card-58 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-59 #card-59 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-60 #card-60 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-61 #card-61 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-62 #card-62 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-63 #card-63 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-64 #card-64 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-65 #card-65 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-66 #card-66 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-67 #card-67 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-68 #card-68 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-69 #card-69 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-70 #card-70 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-71 #card-71 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-72 #card-72 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-73 #card-73 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-74 #card-74 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-75 #card-75 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-76 #card-76 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-77 #card-77 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-78 #card-78 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-79 #card-79 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-80 #card-80 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-81 #card-81 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-82 #card-82 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-83 #card-83 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-84 #card-84 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-85 #card-85 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-86 #card-86 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-87 #card-87 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-88 #card-88 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-89 #card-89 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-90 #card-90 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-91 #card-91 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-92 #card-92 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-93 #card-93 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-94 #card-94 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-95 #card-95 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-96 #card-96 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-97 #card-97 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-98 #card-98 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-99 #card-99 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-100 #card-100 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-101 #card-101 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-102 #card-102 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-103 #card-103 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-104 #card-104 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-105 #card-105 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-106 #card-106 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-107 #card-107 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-108 #card-108 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-109 #card-109 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-110 #card-110 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-111 #card-111 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-112 #card-112 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-113 #card-113 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-114 #card-114 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-115 #card-115 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-116 #card-116 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-117 #card-117 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-118 #card-118 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-119 #card-119 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-120 #card-120 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-121 #card-121 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-122 #card-122 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-123 #card-123 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-124 #card-124 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-125 #card-125 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-126 #card-126 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-127 #card-127 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-128 #card-128 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-129 #card-129 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-130 #card-130 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-131 #card-131 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-132 #card-132 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-133 #card-133 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-134 #card-134 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-135 #card-135 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-136 #card-136 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-137 #card-137 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-138 #card-138 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-139 #card-139 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-140 #card-140 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-141 #card-141 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-142 #card-142 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-143 #card-143 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-144 #card-144 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-145 #card-145 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-146 #card-146 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-147 #card-147 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-148 #card-148 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-149 #card-149 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-150 #card-150 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-151 #card-151 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-152 #card-152 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-153 #card-153 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-154 #card-154 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-155 #card-155 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-156 #card-156 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-157 #card-157 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-158 #card-158 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-159 #card-159 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-160 #card-160 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-161 #card-161 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-162 #card-162 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-163 #card-163 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-164 #card-164 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-165 #card-165 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-166 #card-166 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-167 #card-167 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-168 #card-168 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-169 #card-169 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-170 #card-170 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-171 #card-171 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-172 #card-172 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-173 #card-173 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-174 #card-174 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-175 #card-175 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-176 #card-176 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-177 #card-177 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-178 #card-178 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-179 #card-179 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-180 #card-180 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-181 #card-181 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-182 #card-182 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-183 #card-183 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-184 #card-184 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-185 #card-185 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-186 #card-186 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-187 #card-187 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-188 #card-188 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-189 #card-189 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-190 #card-190 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-191 #card-191 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-192 #card-192 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-193 #card-193 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-194 #card-194 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-195 #card-195 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-196 #card-196 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-197 #card-197 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-198 #card-198 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-199 #card-199 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-200 #card-200 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-201 #card-201 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-202 #card-202 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-203 #card-203 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-204 #card-204 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-205 #card-205 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-206 #card-206 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-207 #card-207 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-208 #card-208 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-209 #card-209 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-210 #card-210 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-211 #card-211 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-212 #card-212 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-213 #card-213 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-214 #card-214 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-215 #card-215 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-216 #card-216 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-217 #card-217 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-218 #card-218 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-219 #card-219 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-220 #card-220 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-221 #card-221 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-222 #card-222 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-223 #card-223 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-224 #card-224 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-225 #card-225 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-226 #card-226 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-227 #card-227 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-228 #card-228 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-229 #card-229 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-230 #card-230 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-231 #card-231 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-232 #card-232 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-233 #card-233 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-234 #card-234 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-235 #card-235 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-236 #card-236 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-237 #card-237 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-238 #card-238 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-239 #card-239 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-240 #card-240 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-241 #card-241 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-242 #card-242 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-243 #card-243 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-244 #card-244 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-245 #card-245 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-246 #card-246 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-247 #card-247 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-248 #card-248 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-249 #card-249 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-250 #card-250 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-251 #card-251 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-252 #card-252 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-253 #card-253 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-254 #card-254 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-255 #card-255 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-256 #card-256 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-257 #card-257 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-258 #card-258 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-259 #card-259 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-260 #card-260 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-261 #card-261 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-262 #card-262 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-263 #card-263 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-264 #card-264 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-265 #card-265 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-266 #card-266 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-267 #card-267 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-268 #card-268 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-269 #card-269 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-270 #card-270 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-271 #card-271 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-272 #card-272 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-273 #card-273 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-274 #card-274 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-275 #card-275 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-276 #card-276 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-277 #card-277 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-278 #card-278 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-279 #card-279 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-280 #card-280 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-281 #card-281 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-282 #card-282 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-283 #card-283 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-284 #card-284 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-285 #card-285 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-286 #card-286 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-287 #card-287 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-288 #card-288 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-289 #card-289 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-290 #card-290 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-291 #card-291 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-292 #card-292 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-293 #card-293 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-294 #card-294 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-295 #card-295 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-296 #card-296 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-297 #card-297 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-298 #card-298 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-299 #card-299 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-300 #card-300 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-301 #card-301 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-302 #card-302 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-303 #card-303 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-304 #card-304 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-305 #card-305 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-306 #card-306 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-307 #card-307 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-308 #card-308 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-309 #card-309 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-310 #card-310 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-311 #card-311 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-312 #card-312 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-313 #card-313 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-314 #card-314 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-315 #card-315 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-316 #card-316 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-317 #card-317 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-318 #card-318 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-319 #card-319 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-320 #card-320 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-321 #card-321 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-322 #card-322 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-323 #card-323 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-324 #card-324 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-325 #card-325 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-326 #card-326 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-327 #card-327 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-328 #card-328 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-329 #card-329 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-330 #card-330 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-331 #card-331 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-332 #card-332 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-333 #card-333 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-334 #card-334 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-335 #card-335 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-336 #card-336 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-337 #card-337 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-338 #card-338 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-339 #card-339 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-340 #card-340 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-341 #card-341 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-342 #card-342 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-343 #card-343 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-344 #card-344 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-345 #card-345 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-346 #card-346 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-347 #card-347 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-348 #card-348 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-349 #card-349 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-350 #card-350 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-351 #card-351 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-352 #card-352 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-353 #card-353 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-354 #card-354 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-355 #card-355 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-356 #card-356 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-357 #card-357 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-358 #card-358 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-359 #card-359 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-360 #card-360 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-361 #card-361 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-362 #card-362 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-363 #card-363 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-364 #card-364 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-365 #card-365 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-366 #card-366 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-367 #card-367 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-368 #card-368 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-369 #card-369 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-370 #card-370 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-371 #card-371 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-372 #card-372 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-373 #card-373 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-374 #card-374 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-375 #card-375 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-376 #card-376 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-377 #card-377 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-378 #card-378 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-379 #card-379 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-380 #card-380 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-381 #card-381 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-382 #card-382 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-383 #card-383 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-384 #card-384 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-385 #card-385 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-386 #card-386 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-387 #card-387 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-388 #card-388 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-389 #card-389 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-390 #card-390 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-391 #card-391 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-392 #card-392 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-393 #card-393 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-394 #card-394 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-395 #card-395 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-396 #card-396 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-397 #card-397 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-398 #card-398 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-399 #card-399 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-400 #card-400 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-401 #card-401 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-402 #card-402 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-403 #card-403 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-404 #card-404 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-405 #card-405 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-406 #card-406 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-407 #card-407 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-408 #card-408 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-409 #card-409 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-410 #card-410 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-411 #card-411 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-412 #card-412 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-413 #card-413 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-414 #card-414 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-415 #card-415 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-416 #card-416 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-417 #card-417 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-418 #card-418 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-419 #card-419 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-420 #card-420 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-421 #card-421 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-422 #card-422 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-423 #card-423 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-424 #card-424 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-425 #card-425 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-426 #card-426 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-427 #card-427 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-428 #card-428 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-429 #card-429 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-430 #card-430 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-431 #card-431 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-432 #card-432 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-433 #card-433 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-434 #card-434 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-435 #card-435 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-436 #card-436 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-437 #card-437 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-438 #card-438 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-439 #card-439 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-440 #card-440 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-441 #card-441 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-442 #card-442 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-443 #card-443 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-444 #card-444 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-445 #card-445 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-446 #card-446 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-447 #card-447 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-448 #card-448 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-449 #card-449 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-450 #card-450 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-451 #card-451 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-452 #card-452 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-453 #card-453 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-454 #card-454 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-455 #card-455 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-456 #card-456 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-457 #card-457 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-458 #card-458 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-459 #card-459 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-460 #card-460 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-461 #card-461 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-462 #card-462 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-463 #card-463 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-464 #card-464 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-465 #card-465 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-466 #card-466 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-467 #card-467 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-468 #card-468 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-469 #card-469 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-470 #card-470 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-471 #card-471 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-472 #card-472 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-473 #card-473 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-474 #card-474 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-475 #card-475 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-476 #card-476 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-477 #card-477 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-478 #card-478 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-479 #card-479 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-480 #card-480 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-481 #card-481 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-482 #card-482 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-483 #card-483 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-484 #card-484 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-485 #card-485 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-486 #card-486 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-487 #card-487 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-488 #card-488 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-489 #card-489 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-490 #card-490 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-491 #card-491 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-492 #card-492 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-493 #card-493 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-494 #card-494 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-495 #card-495 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-496 #card-496 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-497 #card-497 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-498 #card-498 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-499 #card-499 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-500 #card-500 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-501 #card-501 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-502 #card-502 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-503 #card-503 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-504 #card-504 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-505 #card-505 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-506 #card-506 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-507 #card-507 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-508 #card-508 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-509 #card-509 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-510 #card-510 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-511 #card-511 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-512 #card-512 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-513 #card-513 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-514 #card-514 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-515 #card-515 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-516 #card-516 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-517 #card-517 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-518 #card-518 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-519 #card-519 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-520 #card-520 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-521 #card-521 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-522 #card-522 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-523 #card-523 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-524 #card-524 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-525 #card-525 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-526 #card-526 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-527 #card-527 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-528 #card-528 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-529 #card-529 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-530 #card-530 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-531 #card-531 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-532 #card-532 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-533 #card-533 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-534 #card-534 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-535 #card-535 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-536 #card-536 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-537 #card-537 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-538 #card-538 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-539 #card-539 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-540 #card-540 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-541 #card-541 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-542 #card-542 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-543 #card-543 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-544 #card-544 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-545 #card-545 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-546 #card-546 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-547 #card-547 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-548 #card-548 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-549 #card-549 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-550 #card-550 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-551 #card-551 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-552 #card-552 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-553 #card-553 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-554 #card-554 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-555 #card-555 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-556 #card-556 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-557 #card-557 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-558 #card-558 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-559 #card-559 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-560 #card-560 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-561 #card-561 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-562 #card-562 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-563 #card-563 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-564 #card-564 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-565 #card-565 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-566 #card-566 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-567 #card-567 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-568 #card-568 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-569 #card-569 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-570 #card-570 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-571 #card-571 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-572 #card-572 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-573 #card-573 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-574 #card-574 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-575 #card-575 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-576 #card-576 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-577 #card-577 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-578 #card-578 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-579 #card-579 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-580 #card-580 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-581 #card-581 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-582 #card-582 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-583 #card-583 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-584 #card-584 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-585 #card-585 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-586 #card-586 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-587 #card-587 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-588 #card-588 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-589 #card-589 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-590 #card-590 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-591 #card-591 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-592 #card-592 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-593 #card-593 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-594 #card-594 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-595 #card-595 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-596 #card-596 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-597 #card-597 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-598 #card-598 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-599 #card-599 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-600 #card-600 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-601 #card-601 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-602 #card-602 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-603 #card-603 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-604 #card-604 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-605 #card-605 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-606 #card-606 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-607 #card-607 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-608 #card-608 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-609 #card-609 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-610 #card-610 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-611 #card-611 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-612 #card-612 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-613 #card-613 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-614 #card-614 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-615 #card-615 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-616 #card-616 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-617 #card-617 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-618 #card-618 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-619 #card-619 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-620 #card-620 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-621 #card-621 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-622 #card-622 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-623 #card-623 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-624 #card-624 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-625 #card-625 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-626 #card-626 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-627 #card-627 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-628 #card-628 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-629 #card-629 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-630 #card-630 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-631 #card-631 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-632 #card-632 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-633 #card-633 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-634 #card-634 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-635 #card-635 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-636 #card-636 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-637 #card-637 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-638 #card-638 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-639 #card-639 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-640 #card-640 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-641 #card-641 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-642 #card-642 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-643 #card-643 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-644 #card-644 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-645 #card-645 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-646 #card-646 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-647 #card-647 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-648 #card-648 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-649 #card-649 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-650 #card-650 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-651 #card-651 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-652 #card-652 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-653 #card-653 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-654 #card-654 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-655 #card-655 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-656 #card-656 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-657 #card-657 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-658 #card-658 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-659 #card-659 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-660 #card-660 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-661 #card-661 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-662 #card-662 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-663 #card-663 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-664 #card-664 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-665 #card-665 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-666 #card-666 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-667 #card-667 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-668 #card-668 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-669 #card-669 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-670 #card-670 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-671 #card-671 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-672 #card-672 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-673 #card-673 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-674 #card-674 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-675 #card-675 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-676 #card-676 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-677 #card-677 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-678 #card-678 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-679 #card-679 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-680 #card-680 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-681 #card-681 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-682 #card-682 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-683 #card-683 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-684 #card-684 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-685 #card-685 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-686 #card-686 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-687 #card-687 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-688 #card-688 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-689 #card-689 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-690 #card-690 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-691 #card-691 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-692 #card-692 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-693 #card-693 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-694 #card-694 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-695 #card-695 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-696 #card-696 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-697 #card-697 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-698 #card-698 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-699 #card-699 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-700 #card-700 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-701 #card-701 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-702 #card-702 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-703 #card-703 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-704 #card-704 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-705 #card-705 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-706 #card-706 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-707 #card-707 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-708 #card-708 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-709 #card-709 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-710 #card-710 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-711 #card-711 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-712 #card-712 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-713 #card-713 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-714 #card-714 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-715 #card-715 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-716 #card-716 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-717 #card-717 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-718 #card-718 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-719 #card-719 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-720 #card-720 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-721 #card-721 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-722 #card-722 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-723 #card-723 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-724 #card-724 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-725 #card-725 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-726 #card-726 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-727 #card-727 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-728 #card-728 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-729 #card-729 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-730 #card-730 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-731 #card-731 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-732 #card-732 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-733 #card-733 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-734 #card-734 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-735 #card-735 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-736 #card-736 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-737 #card-737 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-738 #card-738 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-739 #card-739 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-740 #card-740 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-741 #card-741 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-742 #card-742 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-743 #card-743 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-744 #card-744 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-745 #card-745 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-746 #card-746 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-747 #card-747 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-748 #card-748 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-749 #card-749 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-750 #card-750 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-751 #card-751 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-752 #card-752 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-753 #card-753 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-754 #card-754 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-755 #card-755 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-756 #card-756 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-757 #card-757 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-758 #card-758 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-759 #card-759 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-760 #card-760 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-761 #card-761 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-762 #card-762 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-763 #card-763 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-764 #card-764 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-765 #card-765 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-766 #card-766 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-767 #card-767 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-768 #card-768 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-769 #card-769 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-770 #card-770 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-771 #card-771 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-772 #card-772 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-773 #card-773 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-774 #card-774 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-775 #card-775 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-776 #card-776 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-777 #card-777 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-778 #card-778 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-779 #card-779 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-780 #card-780 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-781 #card-781 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-782 #card-782 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-783 #card-783 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-784 #card-784 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-785 #card-785 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-786 #card-786 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-787 #card-787 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-788 #card-788 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-789 #card-789 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-790 #card-790 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-791 #card-791 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-792 #card-792 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-793 #card-793 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-794 #card-794 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-795 #card-795 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-796 #card-796 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-797 #card-797 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-798 #card-798 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-799 #card-799 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-800 #card-800 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-801 #card-801 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-802 #card-802 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-803 #card-803 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-804 #card-804 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-805 #card-805 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-806 #card-806 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-807 #card-807 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-808 #card-808 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-809 #card-809 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-810 #card-810 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-811 #card-811 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-812 #card-812 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-813 #card-813 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-814 #card-814 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-815 #card-815 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-816 #card-816 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-817 #card-817 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-818 #card-818 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-819 #card-819 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-820 #card-820 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-821 #card-821 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-822 #card-822 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-823 #card-823 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-824 #card-824 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-825 #card-825 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-826 #card-826 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-827 #card-827 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-828 #card-828 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-829 #card-829 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-830 #card-830 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-831 #card-831 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-832 #card-832 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-833 #card-833 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-834 #card-834 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-835 #card-835 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-836 #card-836 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-837 #card-837 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-838 #card-838 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-839 #card-839 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-840 #card-840 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-841 #card-841 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-842 #card-842 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-843 #card-843 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-844 #card-844 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-845 #card-845 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-846 #card-846 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-847 #card-847 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-848 #card-848 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-849 #card-849 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-850 #card-850 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-851 #card-851 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-852 #card-852 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-853 #card-853 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-854 #card-854 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-855 #card-855 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-856 #card-856 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-857 #card-857 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-858 #card-858 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-859 #card-859 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-860 #card-860 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-861 #card-861 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-862 #card-862 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-863 #card-863 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-864 #card-864 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-865 #card-865 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-866 #card-866 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-867 #card-867 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-868 #card-868 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-869 #card-869 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-870 #card-870 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-871 #card-871 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-872 #card-872 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-873 #card-873 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-874 #card-874 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-875 #card-875 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-876 #card-876 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-877 #card-877 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-878 #card-878 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-879 #card-879 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-880 #card-880 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-881 #card-881 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-882 #card-882 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-883 #card-883 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-884 #card-884 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-885 #card-885 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-886 #card-886 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-887 #card-887 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-888 #card-888 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-889 #card-889 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-890 #card-890 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-891 #card-891 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-892 #card-892 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-893 #card-893 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-894 #card-894 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-895 #card-895 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-896 #card-896 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-897 #card-897 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-898 #card-898 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-899 #card-899 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-900 #card-900 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-901 #card-901 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-902 #card-902 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-903 #card-903 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-904 #card-904 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-905 #card-905 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-906 #card-906 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-907 #card-907 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-908 #card-908 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-909 #card-909 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-910 #card-910 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-911 #card-911 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-912 #card-912 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-913 #card-913 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-914 #card-914 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-915 #card-915 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-916 #card-916 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-917 #card-917 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-918 #card-918 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-919 #card-919 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-920 #card-920 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-921 #card-921 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-922 #card-922 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-923 #card-923 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-924 #card-924 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-925 #card-925 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-926 #card-926 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-927 #card-927 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-928 #card-928 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-929 #card-929 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-930 #card-930 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-931 #card-931 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-932 #card-932 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-933 #card-933 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-934 #card-934 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-935 #card-935 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-936 #card-936 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-937 #card-937 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-938 #card-938 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-939 #card-939 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-940 #card-940 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-941 #card-941 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-942 #card-942 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-943 #card-943 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-944 #card-944 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-945 #card-945 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-946 #card-946 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-947 #card-947 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-948 #card-948 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-949 #card-949 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-950 #card-950 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-951 #card-951 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-952 #card-952 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-953 #card-953 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-954 #card-954 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-955 #card-955 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-956 #card-956 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-957 #card-957 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-958 #card-958 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-959 #card-959 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-960 #card-960 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-961 #card-961 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-962 #card-962 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-963 #card-963 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-964 #card-964 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-965 #card-965 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-966 #card-966 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-967 #card-967 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-968 #card-968 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-969 #card-969 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-970 #card-970 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-971 #card-971 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-972 #card-972 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-973 #card-973 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-974 #card-974 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-975 #card-975 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-976 #card-976 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-977 #card-977 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-978 #card-978 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-979 #card-979 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-980 #card-980 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-981 #card-981 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-982 #card-982 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-983 #card-983 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-984 #card-984 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-985 #card-985 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-986 #card-986 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-987 #card-987 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-988 #card-988 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-989 #card-989 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-990 #card-990 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-991 #card-991 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-992 #card-992 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-993 #card-993 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-994 #card-994 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-995 #card-995 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-996 #card-996 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-997 #card-997 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-998 #card-998 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-999 #card-999 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider.active-slide-1000 #card-1000 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.cards-slider .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cards-slider:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 300px;
+  outline: 5px solid #61DAFB;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* #endregion */
+.card {
+  border: 3px #f3f3f3 solid;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.card:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+
+.card .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px;
+}
+
+.card .price {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #BA265D;
+}
+
+.card .details {
+  position: relative;
+}
+
+.card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card .features li {
+  padding-left: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.card .features li span {
+  display: none;
+}
+
+.card .features li.icon-bed {
+  background: url(./assets/bed-left-side.svg) left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.card .features li.icon-bath {
+  background: url(./assets/bathtub.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.card .features li.icon-car {
+  background: url(./assets/car-compact.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.propertyList {
+  background: #faf8f8;
+  position: relative;
+  bottom: 50px;
+  padding: 0 0 30px 0;
+}
+
+.propertyList #page-numbers {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.propertyList__header {
+  margin: 0;
+}
+
+.propertyList__container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.propertyList__container h1, .propertyList__container h2 {
+  text-align: center;
+}
+
+.propertyList__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.propertyList__items p {
+  padding-left: 15px;
+}
+
+.propertyList__items--item {
+  width: 250px;
+  margin-right: 25px;
+  border: 1px solid #ccc;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.propertyList__items--img {
+  width: 100%;
+}
+
+.propertyList__items--price {
+  color: #BA265D;
+}
+
+.propertyList__items--number {
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+.propertyList__items--number:hover {
+  background: #ccc;
+  color: #BA265D;
+  cursor: pointer;
+}
+
+.eachProp {
+  padding-top: 40px;
+  width: 1150px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.eachProp__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.eachProp__container--img {
+  width: 460px;
+  margin-right: 20px;
+  height: 460px;
+}
+
+.eachProp__container--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.eachProp__details {
+  width: 540px;
+  background: #eee;
+  padding: 30px 40px 37px 40px;
+}
+
+.eachProp__details--price {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.eachProp__details--available {
+  color: green;
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  bottom: 5px;
+}
+
+.eachProp__area {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eachProp__area div:first-child {
+  margin-right: 100px;
+}
+
+.eachProp__area i {
+  margin-right: 7px;
+}
+
+.eachProp__agent {
+  position: relative;
+}
+
+.eachProp__agent i {
+  margin-right: 10px;
+}
+
+.eachProp__agent a {
+  color: #5a5a5a;
+}
+
+.eachProp__agent--photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+.eachProp__agent--photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.eachProp__register {
+  margin-top: 80px;
+  background: #eee;
+}
+
+.image-gallery-play-button {
+  display: none;
+}
+
+.image-gallery-image {
+  height: 450px;
+}
+
+.tabs {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.tabs p {
+  line-height: 30px;
+}
+
+.adUpload {
+  width: 850px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.adUpload__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.adUpload__row sup:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.adUpload__row--link {
+  color: red;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.adUpload__row--p {
+  position: relative;
+  bottom: 30px;
+}
+
+.adUpload__row--popup {
+  width: 200px;
+  height: 60px;
+  display: inline-block;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 3px #ccc;
+          box-shadow: 2px 2px 3px #ccc;
+  line-height: 63px;
+  position: absolute;
+  left: 215px;
+  top: 310px;
+  padding: 10px;
+}
+
+.adUpload__container {
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.adUpload__container a {
+  text-decoration: none;
+}
+
+.adUpload__container--price, .adUpload__container--address, .adUpload__container--city, .adUpload__container--bedrooms, .adUpload__container--bathrooms, .adUpload__container--parking, .adUpload__container--furnished, .adUpload__container--latitude, .adUpload__container--longitude, .adUpload__container--area, .adUpload__container--available, .adUpload__container--agentName, .adUpload__container--agentPhone, .adUpload__container--agentEmail, .adUpload__container--mainPhoto, .adUpload__container--index {
+  margin-left: 10px;
+  margin-right: 20px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.adUpload__container--price {
+  width: 60px;
+}
+
+.adUpload__container--index {
+  width: 40px;
+  padding: 0 5px;
+}
+
+.adUpload__container--address {
+  width: 300px;
+}
+
+.adUpload__container--city {
+  width: 160px;
+}
+
+.adUpload__container--bedrooms, .adUpload__container--bathrooms, .adUpload__container--parking, .adUpload__container--furnished, .adUpload__container--latitude, .adUpload__container--longitude, .adUpload__container--area {
+  width: 60px;
+}
+
+.adUpload__container--description {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.adUpload__container--btn {
+  padding: 10px 35px;
+  color: #eee;
+  background: #68b454;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.adUpload__container--btn:hover {
+  background: #3f7131;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.adUpload__container--btn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.adUpload__container--errorMsg {
+  color: red;
+  position: absolute;
+  left: 72px;
+  top: 36px;
+}
+
+.adUpload__container--errorMsgCity {
+  color: red;
+  position: absolute;
+  left: 40px;
+  top: 36px;
+}
+
+.outer {
+  background: #faf8f8;
+  position: relative;
+  bottom: 150px;
+  padding-top: 40px;
+}
+
+.chart {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
+
+.chart h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */

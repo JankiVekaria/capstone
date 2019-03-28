@@ -1,0 +1,59 @@
+.footer {
+  background: $color-footer;
+  height: 70px;
+  color: $color-light;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+ 
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 28px;
+
+    &--item {
+      margin-right: 40px;
+    }
+
+    &--item:hover {
+      color: $purple-color;
+    }
+
+    &--agreement {
+      margin-left: 250px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    list-style: none;
+    margin: 25px 150px 0 0;
+
+    &--icon {
+      margin-right: 20px;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    &--icon:first-child:hover {
+      color: #3b5998;
+    }
+
+    &--icon:nth-child(2):hover {
+      color: #38A1F3;
+    }
+
+    &--icon:last-child:hover {
+      color: rgb(180, 55, 103);
+    }
+  }
+}

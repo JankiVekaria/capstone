@@ -1,0 +1,152 @@
+.header {
+  background: $purple-color;
+  height: 75px;
+  border-bottom: 2px solid $color-footer;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__container {
+    width: 1150px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &--logo {
+      width: 55px;
+      height: 55px;
+      margin-top: 10px;
+    }
+
+    &--textTop {
+      color: $color-light;
+      font-size: 1.75rem;
+      position: relative;
+      right: -3px;
+      top: -27px;
+    }
+
+    &--textBottom {
+      color: $color-light;
+      font-size: 1rem;
+      position: relative;
+      right: 128px;
+      top: -5px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__nav {
+
+    &--list{
+      display: flex;
+      list-style: none;
+      margin: 23px 0;
+      line-height: 30px;
+    }
+
+    &--item {
+      color: $color-light;
+      margin-right: 20px;
+    }
+
+    &--item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &--upload {
+     @include header-icon();
+    }
+
+    &--login {
+      @include header-icon();
+    }
+
+    &--signup {
+      @include header-icon();
+    }
+
+    &--item:hover {
+      color: $color-medium-gray;
+      border-bottom: 3px solid $color-medium-gray;
+      padding-bottom: 15px;
+    }
+
+    &--language {
+      list-style: none;
+      padding-left: 12px;
+      padding-top: 30px;
+      color: #000;
+      background: $purple-color;
+      display: none;
+      padding: 0;
+      position: relative;
+      top: 10px;
+      text-align: center;
+      line-height: 55px;
+
+
+      li {
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+        border-bottom: 2px solid $color-footer;
+
+
+        &:hover{
+          background: darken($purple-color, 10%)
+        }
+
+        span {
+          position: relative;
+          top: -7px;
+        }
+      }
+
+      span {
+        height: 54px;
+        display: inline-block;
+      }
+    }
+
+    &--ukFlag {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background: url(./assets/icons/uk.png) no-repeat;
+      margin-right: 10px;
+      line-height: 4px;
+    }
+
+    &--frFlag {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background: url(./assets/icons/france.png) no-repeat;
+      margin-right: 10px;
+      line-height: 4px;
+    }
+
+    &--lastItem {
+      width: 80px;
+      cursor: pointer;
+    }
+
+    &--lastItem:hover {
+      padding-bottom:0px;
+
+    }
+
+    &--language:hover {
+      display: block;
+    }
+
+    &--item:last-child:hover &--language{
+      z-index: 11;
+      display: block;
+    }
+
+  }
+}

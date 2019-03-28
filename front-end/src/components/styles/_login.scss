@@ -1,0 +1,66 @@
+.login {
+  width: 650px;
+  margin: 0 auto;
+  padding-bottom: 300px;
+
+  &__nav {
+    color: $color-dark-gray;
+    font-size: .9rem;
+  }
+
+  &__card {
+    border: 1px solid $color-light-gray;
+    border-radius: 5px;
+    padding: 30px;
+
+    &--email {
+      margin-bottom: 30px;
+    }
+
+    &--atSymbol, &--lockSymbol {
+      width: 40px;
+      height: 43px;
+      display: inline-block;
+      background: $color-light-gray;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      left: 40px;
+      border-radius: 5px;
+    }
+
+    &--emailInput, &--passwordInput {
+      height: 40px;
+      width: 450px;
+      border-radius: 5px;
+      border: 1px solid $color-light-gray;
+      padding-left: 50px;
+    }
+
+    &--btn {
+      padding: 10px 35px;
+      color: $color-lighter-gray;
+      background: rgb(104, 180, 84);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer; 
+      margin-top: 20px;
+      width: 86%;
+      margin-left: 38px;
+      transition: all .3s;
+    }
+
+    &--btn:hover {
+      background: darken(rgb(104, 180, 84), 20%);
+      transform: translateY(-5px);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)
+    }
+
+    &--btn:active {
+      transform: translateY(0);
+      transition: all .3s;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

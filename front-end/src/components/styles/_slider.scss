@@ -1,0 +1,89 @@
+
+
+.slider {
+  height: 400px;
+  width: 1150px;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 5px;
+  position: relative;
+  text-align: center;
+
+
+  &__header {
+    margin-bottom: 30px;
+  }
+}
+
+.fa-angle-left {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 220px;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fa-angle-right {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 220px;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fa-angle-left:hover {
+  color: $purple-color;
+}
+
+.fa-angle-right:hover {
+  color: $purple-color;
+}
+
+/* #region cards slider */
+.cards-slider-wrapper {
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  display: flex; 
+  position: absolute;
+  .card {
+    flex: 1;
+    min-width: 200px;
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  }
+}
+
+
+
+//SASS Loops
+$i: 0;
+@for $i from 0 through 1000 {
+  .cards-slider.active-slide-#{$i} #card-#{$i} {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+  .card {
+    flex: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 300px;
+    outline: 5px solid #61DAFB;
+    position: absolute;
+    top: 0; 
+    left: 0;
+  }
+}
+/* #endregion */

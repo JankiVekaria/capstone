@@ -1,0 +1,34 @@
+.moreInfo {
+  padding: 60px;
+
+  &__container {
+    width: 1150px;
+    margin: auto;
+    display: flex;
+  }
+
+  &__left {
+    width: 500px;
+    margin-right: 150px;
+    text-align: center;
+  }
+
+  &__right {
+    width: 500px;
+    text-align: center;
+
+  }
+
+  .fas {
+    color: $purple-color;
+    font-size: 3rem;
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  h2 {
+    color: $purple-color;
+  }
+}

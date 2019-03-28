@@ -1,0 +1,78 @@
+.propertyList {
+  background: #faf8f8;
+  padding: 0 0 120px 0;
+
+  #page-numbers {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__header {
+    margin: 0;
+  }
+
+  &__container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    h1, h2 {
+     text-align: center;
+    }
+  }
+
+  &__items {
+      display: flex;
+      text-align: left;
+      flex-wrap: wrap;
+
+
+      p {
+        padding-left: 15px;
+      }
+
+    &--item{
+      width: 250px;
+      margin-right: 25px;
+      border: 1px solid #ccc;
+      text-align: left;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    &--item:hover {
+      
+    }
+
+    &--img {
+      width: 100%;
+      height:160px;
+      object-fit: cover;
+      transform: scale(1.15);
+      transition: all .4s;
+
+    }
+
+    &--img:hover {
+      transform: scale(1)
+    }
+
+
+
+    &--price {
+      color: $purple-color;
+    }
+
+    &--number {
+      padding: 7px;
+      border: 1px solid #ccc;
+    }
+
+    &--number:hover {
+      background: #ccc;
+      color: $purple-color;
+      cursor: pointer;
+    }
+  }
+}
